@@ -1,1 +1,1 @@
-FROM xspec:latest
+FROM integralsw/osa-python27
