@@ -7,6 +7,8 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
+RUN mkdir -pv $HOME; chown -R ${NB_UID}:${NB_UID} ${HOME}
+
 RUN adduser  \
     --uid ${NB_UID} \
     ${NB_USER}
@@ -18,3 +20,7 @@ USER ${NB_USER}
 
 RUN echo 'source /init.sh' >> $HOME/.bashrc
 ADD init.sh /init.sh
+
+USER root
+RUN ln -s /opt/heasoft/x86_64-unknown-linux-gnu-libc2.17 /opt/heasoft/x86_64-pc-linux-gnu-libc2.17
+USER ${NB_USER}
