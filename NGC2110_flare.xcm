@@ -1,0 +1,23 @@
+statistic chi
+data 1:1 NGC2110_spectrum_flare.fits
+response  1:1 NGC2110_rmf_flare.fits
+arf 1:1 NGC2110_arf_flare.fits
+ignore 1:bad
+ignore 1:**-20.
+ignore 1:300.-**
+
+method leven 10 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  cutoffpl
+        1.43356       0.01         -3         -2          9         10
+         192.65       0.01       0.01          1        500        500
+      0.0104736       0.01          0          0      1e+20      1e+24
+fit
+setplot rebin 5 5
+plot eeufs
+iplot
+wdata "NGC2110_spectrum_flare.txt"
