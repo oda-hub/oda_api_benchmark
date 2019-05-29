@@ -31,7 +31,7 @@ echo "model  cutoffpl">>$xcmfile
 echo "         1.43356       0.01         -3         -2          9         10">>$xcmfile>>$xcmfile
 echo "         192.65       0.01       0.01          1        500        500">>$xcmfile>>$xcmfile
 echo "      0.0104736       0.01          0          0      1e+20      1e+24">>$xcmfile>>$xcmfile
-echo "fit">>$xcmfile
+echo "fit 100">>$xcmfile
 echo "setplot rebin 5 5">>$xcmfile
 echo "plot eeufs">>$xcmfile
 echo "iplot">>$xcmfile
