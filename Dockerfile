@@ -67,5 +67,4 @@ RUN ln -s /opt/heasoft/x86_64-unknown-linux-gnu-libc2.17 /opt/heasoft/x86_64-pc-
 RUN pip install future
 RUN pip install -r /requirements.txt
 USER ${NB_USER}
-
 WORKDIR /home/jovyan/
