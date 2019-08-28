@@ -1,4 +1,4 @@
-oda_api_gbenchmark
+oda_api_benchmark
 ==========================================
 *benchmark and examples for the   cdci_data_analysis ODA API*
 
