@@ -25,6 +25,8 @@ echo "model  powerlaw">>$xcmfile
 echo "         1.      0.01         -3         -2          9         10">>$xcmfile
 echo "          0.01       0.01          0          0      1e+20      1e+24">>$xcmfile
 echo "fit 1000">>$xcmfile
+echo "err 1">>$xcmfile
+echo "err 2">>$xcmfile
 echo "flux 18. 55.0 1000">>$xcmfile
 echo "flux err">>$xcmfile
 echo "setplot rebin $reb 10">>$xcmfile
