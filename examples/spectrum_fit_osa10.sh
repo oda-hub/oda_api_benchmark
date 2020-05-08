@@ -21,7 +21,7 @@ echo "response $respfile" >>$xcmfile
 echo "arf $arffile" >>$xcmfile
 echo "ignore bad">>$xcmfile
 echo "ignore **-20.">>$xcmfile
-echo "ignore 100.-*.">>$xcmfile
+echo "ignore 100.-**">>$xcmfile
 echo "model  pegpwrlw">>$xcmfile
 echo "         1.      0.01         -3         -2          9         10">>$xcmfile
 echo "         20       ">>$xcmfile
