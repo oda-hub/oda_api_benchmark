@@ -12,6 +12,7 @@
 *.egg
 *.root
 *.fits
+*.ipynb_checkpoints
 /build
 develop-eggs
 /dist
