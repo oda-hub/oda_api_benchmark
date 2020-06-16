@@ -1,6 +1,6 @@
 
-IMAGE?=carloferrigno/osa-python:$(shell git describe --always)
-IMAGE_LATEST?=carloferrigno/osa-python:latest
+IMAGE?=integralsw/osa-python:$(shell git describe --always)
+IMAGE_LATEST?=integralsw/osa-python:latest
 DUSER := $(shell id -u)
 
 push: build
@@ -16,7 +16,7 @@ pull:
 	docker pull $(IMAGE_LATEST) 
 
 test: build
-	docker run -e HOME_OVERRRIDE=/tmp-home -v $(PWD):/tmp-home -it carloferrigno/osa-python:latest bash -c 'source /init.sh; bash $$HOME/self-test.sh'
+	docker run -e HOME_OVERRRIDE=/tmp-home -v $(PWD):/tmp-home -it integralsw/osa-python:latest bash -c 'source /init.sh; bash $$HOME/self-test.sh'
  
 notebook:  build
 	docker run -v $(PWD):/home/jovyan -it --entrypoint='' -p 8889:8889 --user $(DUSER)  $(IMAGE) bash -c "source /init.sh;jupyter notebook --ip 0.0.0.0 --no-browser --port=8889"
