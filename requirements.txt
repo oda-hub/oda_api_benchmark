@@ -2,3 +2,4 @@
 matplotlib
 oda-integral-wrapper
 pyxmmsas
+corner
