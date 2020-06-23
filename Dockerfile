@@ -66,5 +66,6 @@ USER root
 #RUN ln -s /opt/heasoft/x86_64-unknown-linux-gnu-libc2.17 /opt/heasoft/x86_64-pc-linux-gnu-libc2.17
 RUN pip install future
 RUN pip install -r /requirements.txt
+RUN chmod a+rwx -R /home/jovyan/.astropy
 USER ${NB_USER}
 WORKDIR /home/jovyan/examples
