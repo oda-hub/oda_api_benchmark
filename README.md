@@ -21,7 +21,7 @@ Documentation
 https://oda-api.readthedocs.io/en/latest/
 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cdcihub/oda_api_benchmark/master)
-[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cdcihub/oda_api_benchmark)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/oda-hub/oda_api_benchmark/master)
+[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oda-hub/oda_api_benchmark)
 [![DOI](https://zenodo.org/badge/189023180.svg)](https://zenodo.org/badge/latestdoi/189023180)
 
