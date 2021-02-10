@@ -8,3 +8,6 @@ export HEADAS=/opt/heasoft/x86_64-pc-linux-gnu-libc2.17/
 
 
 source /etc/pyenvrc
+
+export LC_ALL=en_US.utf8
+export LANG=en_US.utf8
