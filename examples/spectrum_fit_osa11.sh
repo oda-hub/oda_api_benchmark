@@ -1,4 +1,6 @@
 #!/bin/sh
+export HEADAS=/opt/local/heasoft-6.27.2/x86_64-apple-darwin16.7.0
+. $HEADAS/headas-init.sh
 name=$1
 reb=$2
 specname="${name}_spectrum_osa11.txt"

@@ -1,4 +1,6 @@
 #!/bin/sh
+export HEADAS=/opt/local/heasoft-6.27.2/x86_64-apple-darwin16.7.0
+. $HEADAS/headas-init.sh
 name=$1
 reb=$2
 specname="${name}_spectrum_osa10.txt"
@@ -37,3 +39,4 @@ echo "plot eeufs">>$xcmfile
 echo "iplot">>$xcmfile
 echo "wdata $specname">>$xcmfile 
 xspec <$xcmfile
+© 2020 GitHub, Inc.
